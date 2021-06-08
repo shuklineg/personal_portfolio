@@ -1,3 +1,8 @@
-from django.db import models
+from django.db.models.base import Model
+from django.db.models.fields import CharField, DateField, TextField
 
-# Create your models here.
+
+class Blog(Model):
+    title = CharField(max_length=200)
+    description = TextField()
+    date = DateField()
