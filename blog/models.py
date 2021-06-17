@@ -6,3 +6,6 @@ class Blog(Model):
     title = CharField(max_length=200)
     description = TextField()
     date = DateField()
+
+    def __str__(self):
+        return self.title
