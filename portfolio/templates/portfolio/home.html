@@ -1,3 +1,6 @@
+{% extends 'portfolio/layout.html' %}
+
+{% block content %}
 <h1>Nick's Portfolio</h1>
 
 {% load static %}
@@ -20,3 +23,4 @@
 <br /><a href="{{ project.url }}">Link</a>
 {% endif %}
 {% endfor %}
+{% endblock %}
